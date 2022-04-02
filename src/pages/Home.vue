@@ -7,7 +7,7 @@
       <img src="@/assets/images/main_img_test.png" alt="">
     </b-row>
     <b-row id="btn-section" class="d-flex justify-content-center">
-      <button id="start-btn" type="button" class="btn btn-lg btn-outline-warning mt-5 rounded-0 px-4">테스트 시작하기</button>
+      <router-link to="/test" id="start-btn" type="button" class="btn btn-lg btn-outline-warning mt-5 rounded-0 px-4">테스트 시작하기</router-link>
     </b-row>
     <b-row id="footer-section" class="d-flex justify-content-center align-content-center">
       <div id="copyright-text" class="d-flex align-items-center">ⓒ 유자X망고 All Rights Reserved.</div>
@@ -44,7 +44,7 @@ export default {
 #start-btn {
   height: fit-content;
 }
-#start-btn:focus {
+#start-btn:focus, #start-btn:hover {
   color: white;
 }
 </style>
